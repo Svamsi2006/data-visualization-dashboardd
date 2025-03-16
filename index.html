@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+    
+    <div class="header">
+        <input type="file" id="fileInput" class="upload-btn" accept=".json">
+    </div>
+    <div id="error-message"></div>
+    <div class="container" id="chartContainer"></div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="dataAnalysis.js"></script>
+    <script src="visualizations.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
